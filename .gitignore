@@ -1,0 +1,38 @@
+# .NET Core
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+# Node / JS / Frontend
+node_modules/
+dist/
+build/
+.next/
+out/
+.env
+.env.local
+.env.*.local
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# React Native / Expo
+.expo/
+*.jks
+*.p8
+*.mobileprovision
+*.orig.*
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore

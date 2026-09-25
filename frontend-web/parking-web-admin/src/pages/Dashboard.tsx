@@ -22,7 +22,7 @@ export default function Dashboard() {
   const { token, logout } = useAuth();
 
   useEffect(() => {
-    fetch('http://localhost:5190/api/stats/dashboard', {
+    fetch('https://parking-platform.onrender.com/api/stats/dashboard', {
       headers: {
         'Authorization': `Bearer ${token}`
       }

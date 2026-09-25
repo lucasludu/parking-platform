@@ -21,7 +21,7 @@ export default function Login() {
         ? JSON.stringify({ name, email, password, role: 0 }) // Role 0 = Admin
         : JSON.stringify({ email, password });
 
-      const response = await fetch(`http://localhost:5190/api/auth/${endpoint}`, {
+      const response = await fetch(`https://parking-platform.onrender.com/api/auth/${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body

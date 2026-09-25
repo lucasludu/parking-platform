@@ -67,7 +67,7 @@ export default function ParkingLots() {
   const [position, setPosition] = useState<[number, number]>(defaultPosition);
 
   const fetchParkingLots = () => {
-    fetch('http://localhost:5190/api/parkinglots', {
+    fetch('https://parking-platform.onrender.com/api/parkinglots', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
@@ -144,8 +144,8 @@ export default function ParkingLots() {
 
     try {
       const url = editingLotId 
-        ? `http://localhost:5190/api/parkinglots/${editingLotId}`
-        : 'http://localhost:5190/api/parkinglots';
+        ? `https://parking-platform.onrender.com/api/parkinglots/${editingLotId}`
+        : 'https://parking-platform.onrender.com/api/parkinglots';
         
       const method = editingLotId ? 'PUT' : 'POST';
       

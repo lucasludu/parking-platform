@@ -14,7 +14,7 @@ export default function Users() {
   const { token, logout } = useAuth();
 
   useEffect(() => {
-    fetch('http://localhost:5190/api/users', {
+    fetch('https://parking-platform.onrender.com/api/users', {
       headers: {
         'Authorization': `Bearer ${token}`
       }

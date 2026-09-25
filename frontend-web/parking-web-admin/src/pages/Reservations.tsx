@@ -17,7 +17,7 @@ export default function Reservations() {
   const { token, logout } = useAuth();
 
   useEffect(() => {
-    fetch('http://localhost:5190/api/reservations', {
+    fetch('https://parking-platform.onrender.com/api/reservations', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
